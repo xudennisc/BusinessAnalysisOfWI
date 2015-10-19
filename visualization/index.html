@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/external/leaflet.css" />
+    <link rel="stylesheet" href="css/external/jquery-ui.css" />
+    <link rel="stylesheet" href="css/filters.css" />
+    <link rel="stylesheet" href="css/map.css" />
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/external/metricsgraphics.css" />
+    <style>
+        #filters {
+            background-color: black;
+        }
+    </style>
+    <script src="http://d3js.org/d3.v3.js"></script>
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script src="js/external/metricsgraphics.js"></script>
+    <script src="js/external/jquery.js"></script>
+    <script src="js/external/jquery-ui.js"></script>
+    <script src="js/external/spin.js"></script>
+    <script src="js/external/leaflet.spin.js"></script>
+    <script src="js/external/heatmap.js"></script>
+    <script src="js/external/leaflet-heatmap.js"></script>
+    <script src="js/myHeatMap.js"></script>
+    <title>XSL</title>
+</head>
+<body>
+    <div id="popUp" class="hidden"></div>
+    <div id="filters">
+        <div id="CategoryDiv">
+            <label class="filters_checkbox" for="Categories">
+                <input type="checkbox" name="filters" value="Categories" id="Categories" />
+                Categories
+            </label>
+        </div>
+        <div id="RatingDiv">
+            <label class="filters_checkbox" for="Ratings">
+                <input type="checkbox" name="filters" value="Ratings" id="Ratings" />
+                Ratings
+            </label>
+        </div>
+        <div id="AreaStatsDiv">
+            <label class="filters_checkbox" for="AreaStats">
+                <input type="checkbox" name="filters" value="AreaStats" id="AreaStats" />
+                Area Stats
+            </label>
+        </div>
+        <div id="HeatMapDiv">
+            <label class="filters_checkbox" for="HeatMap">
+                <input type="checkbox" name="filters" value="HeatMap" id="HeatMap" />
+                Heatmap
+            </label>
+        </div>
+    </div>
+    <div id="map-canvas"></div>
+    <script type="text/javascript" src="js/userGo.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/filters.js"></script>
+</body>
+</html>
